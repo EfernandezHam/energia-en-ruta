@@ -1,7 +1,44 @@
 [
- {"fecha":"2026-10-22","medio":"Forbes España (Europa Press)","titular":"Tercera semana seguida de bajadas: la gasolina se abarata más de un 8 % desde los máximos de octubre","resumen":"Según el Boletín Petrolero de la UE, la gasolina 95 baja a 1,780 €/l y el diésel se mantiene casi plano en 1,889 €/l. Un depósito de 55 litros de diésel cuesta unos 26 € más que hace un año.","url":"https://forbes.es/ultima-hora/1051922/los-carburantes-encadenan-tres-semanas-de-caidas-y-la-gasolina-acumula-un-abaratamiento-de-mas-del-8/"},
- {"fecha":"2026-10-22","medio":"El Conciso","titular":"España liberará seis días de reservas de gasóleo y queroseno para aliviar el mercado","resumen":"La medida llega mientras los precios se alejan de los dos euros. España sigue por debajo de la media europea: el diésel cuesta 1,889 €/l frente a 2,138 €/l en la UE.","url":"https://www.elconciso.es/energia/precios-gasolina-diesel_0_2008315193.html"},
- {"fecha":"2026-10-22","medio":"Mallorcadiario","titular":"La gasolina cae en tres semanas, pero llenar el depósito sigue saliendo más caro que hace un año","resumen":"La bajada llega tras meses de subidas por la crisis energética ligada al conflicto en Oriente Próximo; en el diésel, el sobrecoste interanual por depósito supera los 26 €.","url":"https://www.mallorcadiario.com/la-gasolina-baja-un-82-en-tres-semanas-pero-llenar-el-deposito-cuesta-16-euros-mas-que-hace-un-ano"},
- {"fecha":"2026-10-08","medio":"Noticias Trabajo","titular":"Los carburantes bajan tras prorrogarse la bonificación del Gobierno hasta final de año","resumen":"La gasolina 95 baja a 1,849 €/l y el diésel también cede, aunque menos. Entre gasolineras siguen existiendo diferencias de precio muy amplias.","url":"https://www.noticiastrabajo.es/economia/consumo/el-precio-de-la-gasolina-baja-de-nuevo-y-el-diesel-se-situa-en-los-1918-euros/"},
- {"fecha":"2026-09-23","medio":"El Independiente","titular":"Qué pasaría con el precio del depósito al acabar las ayudas el 1 de octubre","resumen":"El sector anticipaba una subida brusca si se retiraban la bonificación y el ajuste del IVA; el diésel, clave para el transporte de mercancías, era el carburante más expuesto.","url":"https://www.elindependiente.com/economia/2026/09/23/cuanto-costara-llenar-deposito-1-octubre-gasolineras/"}
+ {
+  "fecha": "2026-10-29",
+  "medio": "El Boletín",
+  "titular": "El precio de los carburantes baja por cuarta semana y la gasolina cae casi un 10% en octubre",
+  "resumen": "",
+  "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQU1Q3cEFjeXBQMVU5ZEE5UzhOLUFXcGJYZ1FKOFdHQVNCMEE4QUxVVkt4UEVvT3dvUnVfWWEtZzBwWHFFQ2VFaXVKZjRlOHlkbFdxb25tbGIwZFBoWHF4QXNpdEFzS0xLQVRiR3JweVJ4bGxXaWN2RElTdXFzMFpkNlo1YjlzUkN5dFVacnBXOHlmaXhWZzR5TkVPS1NHdi1nbTV1QjZkN3FBTU5TVFJwQUlTeWZocjNUdVHSAb8BQVVfeXFMUFpGcTZrYUxybjJkdjVlVloyb2NPRXVUUTgzMnZCZHJtTGVLZzI2Mzd3YXR6clE3MEhfajlPRmhmUG9RNGgyZzlvWjZ1cnc1U2dCZFY3VlIycmZkdjVfalJERENlQ0xKS3VhWUZ6UUFxT3RDSlNiNktRZEhTNzlldzhlM2ZWbjliRUFoMUFiY1gwSXcyS29TMXlZZWRseHFXOWdfNmpvbDg2TlNtaUJsTWZrQ01aWjN0RjhfVjdSUW8?oc=5"
+ },
+ {
+  "fecha": "2026-10-29",
+  "medio": "Europa Press",
+  "titular": "Los carburantes suman cuatro semanas de caídas y la gasolina acumula un descenso del 9,7% en el mes",
+  "resumen": "",
+  "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPMDdPTEdYd1pqRnYxUUNObl9UOEw3X3ZfNmZobzBlSFNmZW40dGtjZ2V2VFNRZ1lIeHdmS0h3TWZJR2JmNF9QclE5Q1FCV3RSRUZPOXE2QlAtZ0NoS0dqb050ZUhnZlM3N3psb1pVMEFDVm5vclBMTUljb2xJdGdPX2MzQl92cmJYa1BselMzY0FlWExuN1BIMVh1X2FlS05TQlFCdkhXY1JHRGdpWGRsSTdHbXhSSDVlVC1yREdNQ0p4NU9PTEMtdzlHNDdnZ0p2N203SXlVTGhReTRYYlNLaUpNaWs?oc=5"
+ },
+ {
+  "fecha": "2026-10-29",
+  "medio": "Noticias Trabajo",
+  "titular": "El precio de la gasolina vuelve a bajar y el diésel cuesta 1,888 euros: llenar el depósito cuesta más de 100 euros",
+  "resumen": "",
+  "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPV0htWUxsMHcwSUlrTFptQXNidnlQRno3QUxfWlA0dWptaFZOdFpLaWUtYVZLZUNpUWIzMjZuZXFLblZ6YUZYV0owU2NwUHJBcjdDVC1DY0tKYVd6bHdaY28yUlV0UDZRYWxUeTliSlVVOWx2SjhVaktOeDNJbDN3amx0aUxuY0dWTk5reWM5ZnQyM2hUVHBKYjF0dmt0NG1qb2NnY1pQNkZsY3pLY0d5a25vYllPTm9TbVh3LXNNZ25iWG5PVk9xZjlnaGZmXzc0YU5VWXA2S0xwTGxUdzVtQ2FXNnlFVUpFU2NpSUJkdE5Eem_SAfgBQVVfeXFMUFRBX2Ztdm4wSGlrN2lCUlBVRXNQZ1VQOElfbVN4ZXJzYjlMNnlEYkd1TDh4dHJBTEN2TXBLRFd5dXMxSDctend4SWhmWmE0ZTFfMklCRFdzSjdmYVBuUzl5TUNxZmVPQ0c1eXZMUmJRZzh6TUVHMnBKWXhYczlENm9JSHVVZEdTQ0hyOUlpYzZCdGNzOVFaTkk0WWY0VVpMbWdWclhHS1JYZEtRWU9hbkd2YzJ4ME1FWkU0RUhXZnNYSU9IYzQ0OTNxVDhhcnJBODlkeGFqeVB6WEJNaW53cHI1ZWptMF80ZDR4aDZSa1FPR3FiVVI0RkE?oc=5"
+ },
+ {
+  "fecha": "2026-10-29",
+  "medio": "Las Provincias",
+  "titular": "Las gasolineras más baratas de hoy en Valencia, Alicante y Castellón: dónde repostar al menor precio",
+  "resumen": "",
+  "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQMFhYWmhXZUtPcnZpcTVVM0dmODJzYWpuSE81dnBPdHJnbDI4MUF1QWFXbTFSc1pfXzZsWXk0TjhmQ1V0dVRTQ0NialFfU0loRDI0bWJXWFI4SnF5Vkl0aXZ2c3BqTml1TmpxclQ0VHRtdFU0aDBfZm5tZWVQUHRjUGEwak1FZk5DclpuM3VRYklhSGlHdFpTZXBwZTdzNG50WlRJMEFlajU2d9IBrwFBVV95cUxQR25GMzc4MW56Zm83WmN0bGx6ZUx5SExVd3B2aVd4QTJhSnRCN1BObGh3QnJXTlpCekoxZURqcTFSb25QcWxjclE2OHU3VXg5NUhmUXhweHFtVkEzVEliQkM2d3BwYmNaazhvZDdzUkJCdnhfUUxsci1xOWRoRUpobDlYLXZtVEtTSC1zWkFCcWt6bVZZRmJYaENUMHUtU1lGRVI1TlZjeFp4NllBWUI0?oc=5"
+ },
+ {
+  "fecha": "2026-10-29",
+  "medio": "El Conciso",
+  "titular": "El precio de la gasolina encadena su cuarta semana a la baja y cae casi un 10% en octubre por el alivio fiscal",
+  "resumen": "",
+  "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNWGROOWVSVXVtTGtOcHFYUlY4VFI1Rl9zWmkycGFfVlVMOElpWktwbE5HM05RTHU2Mk5xZ1JLMXpYSzhKYkJpQ2psandkWXNuMmFKellUekxHMjRkWDljQmhUT2psYVRnZUtmX1dFSGNNcDdnZkxuUDNwdGo0VVV6WEpURm4wa3c?oc=5"
+ },
+ {
+  "fecha": "2026-10-29",
+  "medio": "Andalucía Información",
+  "titular": "Los carburantes suman un mes a la baja y la gasolina reduce su precio un 9,7%",
+  "resumen": "",
+  "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPdkhBWHQ5S0FLd25TQVpXUU1xODduVExIaFUyUlV3ZmRQNFFEY2JnZlRiNGRtM2ZZODNTdEk5Z19ObWs1cy1ZOGhkZk1aX29YbXlnSUpBMnZ6ZEx6cVNfWm9LeEhLQXlfV0tFdzI2NDJCR3I2N2MxcEJfMzJsRmoxQ2VXR1FUVVRVbWtzejYzaEJRVEd0VWM3RlFWNjNvdWE0NzVWTVZGYlljWUp5Q050ZHp5YUNOb25NTXFTT1ZYTElxcEhqQjhvNGhxQdIB0AFBVV95cUxQWi1EUllFLWJLZXVmMUl4OS1wcnUxZWsxekRZZ1lWdkNTVHZQTHZSNVNpb1FQeU1tejV3QjZvVE4xLXJfQ2V2NXJkMVQ0UjJ0QkFUaTBNV2ZORDZONnVJbWxOVWlqZnlkdlJwVUVTT013NHJqRmxYV0hsUmFxV1JiQTVHZ2VKZm44WmI3SGxHWGZsSm5Fazc1SDZzbVRZWlM1UHhwQzRyWEl3Yng1VHlscEJMQlFfRXA2c1RjTXRVMnFXRUc3ajlBUDhzUG1Ub2Nv?oc=5"
+ }
 ]
