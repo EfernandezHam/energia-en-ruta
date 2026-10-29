@@ -1,0 +1,53 @@
+cod_prov,provincia,ccaa,poblacion
+01,Álava,País Vasco,341961
+02,Albacete,Castilla-La Mancha,390751
+03,Alicante,C. Valenciana,2033566
+04,Almería,Andalucía,770554
+05,Ávila,Castilla y León,160738
+06,Badajoz,Extremadura,665155
+07,Illes Balears,Illes Balears,1249844
+08,Barcelona,Catalunya,5959941
+09,Burgos,Castilla y León,362663
+10,Cáceres,Extremadura,388190
+11,Cádiz,Andalucía,1261420
+12,Castellón,C. Valenciana,627620
+13,Ciudad Real,Castilla-La Mancha,494848
+14,Córdoba,Andalucía,773163
+15,A Coruña,Galicia,1135623
+16,Cuenca,Castilla-La Mancha,199859
+17,Girona,Catalunya,830429
+18,Granada,Andalucía,945797
+19,Guadalajara,Castilla-La Mancha,285839
+20,Gipuzkoa,País Vasco,733149
+21,Huelva,Andalucía,538789
+22,Huesca,Aragón,230087
+23,Jaén,Andalucía,618143
+24,León,Castilla y León,448030
+25,Lleida,Catalunya,458226
+26,La Rioja,La Rioja,326803
+27,Lugo,Galicia,326022
+28,Madrid,Madrid,7113886
+29,Málaga,Andalucía,1791183
+30,Murcia,Murcia,1586989
+31,Navarra,Navarra,683854
+32,Ourense,Galicia,305278
+33,Asturias,Asturias,1015128
+34,Palencia,Castilla y León,158702
+35,Las Palmas,Canarias,1171547
+36,Pontevedra,Galicia,947818
+37,Salamanca,Castilla y León,328446
+38,Santa Cruz de Tenerife,Canarias,1087319
+39,Cantabria,Cantabria,593623
+40,Segovia,Castilla y León,158251
+41,Sevilla,Andalucía,1977664
+42,Soria,Castilla y León,90183
+43,Tarragona,Catalunya,875530
+44,Teruel,Aragón,136091
+45,Toledo,Castilla-La Mancha,755081
+46,Valencia,C. Valenciana,2763996
+47,Valladolid,Castilla y León,528644
+48,Bizkaia,País Vasco,1167233
+49,Zamora,Castilla y León,165564
+50,Zaragoza,Aragón,998443
+51,Ceuta,Ceuta,83567
+52,Melilla,Melilla,87067

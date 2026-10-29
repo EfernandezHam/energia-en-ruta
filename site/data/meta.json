@@ -1,0 +1,17 @@
+{
+ "carburantes": {
+  "actualizado": "2026-10-29T09:35:00+00:00",
+  "fecha_datos": "2026-10-28",
+  "fuente": "espejo GitHub",
+  "gasolineras": 11246
+ },
+ "recarga": {
+  "actualizado": "2026-10-24T10:30:00+00:00",
+  "fecha_datos": "2026-10-23",
+  "estaciones": 12079,
+  "puntos": 35696
+ },
+ "noticias": {
+  "actualizado": "2026-10-24T10:30:00+00:00"
+ }
+}

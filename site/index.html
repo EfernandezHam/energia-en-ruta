@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Energía en Ruta</title>
+<meta name="description" content="Precios de carburantes por gasolinera y puntos de recarga eléctrica en España, actualizados cada día.">
+<link rel="stylesheet" href="theme.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="dash-root">
+<div class="ob er-top">
+  <header class="er-hero" id="er-hero">
+    <div class="eyebrow">Hamilton Global Intelligence · Observatorio</div>
+    <h1>Energía en Ruta</h1>
+    <p class="lede">La foto, actualizada cada día, de cómo se llena el depósito en España: lo que cuesta repostar en cada gasolinera y dónde se puede cargar un coche eléctrico. Pulsa un carburante o un tipo de recarga para entrar.</p>
+  </header>
+  <nav class="er-pick" id="er-pick" aria-label="Elegir observatorio">
+    <div class="er-card carb">
+      <button type="button" class="er-head" data-view="carb" aria-pressed="false"><span class="ico" aria-hidden="true">⛽</span><span class="t">Carburantes</span><span class="go">Precio medio en España →</span></button>
+      <div class="er-tiles">
+        <button type="button" class="er-tile" data-view="carb" data-pick="diesel"><span class="l">Diésel</span><b><span data-source="c_kpis" data-field="hoy" data-where="combustible=diesel" data-fmt="p" class="dash-skeleton">—</span> €/l</b></button>
+        <button type="button" class="er-tile" data-view="carb" data-pick="gasolina_95"><span class="l">Gasolina 95</span><b><span data-source="c_kpis" data-field="hoy" data-where="combustible=gasolina_95" data-fmt="p" class="dash-skeleton">—</span> €/l</b></button>
+        <button type="button" class="er-tile" data-view="carb" data-pick="gasolina_98"><span class="l">Gasolina 98</span><b><span data-source="c_kpis" data-field="hoy" data-where="combustible=gasolina_98" data-fmt="p" class="dash-skeleton">—</span> €/l</b></button>
+        <button type="button" class="er-tile" data-view="carb" data-pick="diesel_premium"><span class="l">Diésel premium</span><b><span data-source="c_kpis" data-field="hoy" data-where="combustible=diesel_premium" data-fmt="p" class="dash-skeleton">—</span> €/l</b></button>
+      </div>
+    </div>
+    <div class="er-card ev">
+      <button type="button" class="er-head" data-view="ev" aria-pressed="false"><span class="ico" aria-hidden="true">⚡</span><span class="t">Recarga eléctrica</span><span class="go">Puntos de recarga en España →</span></button>
+      <div class="er-tiles">
+        <button type="button" class="er-tile" data-view="ev" data-pick="todas"><span class="l">Total</span><b><span data-source="e_kpis" data-field="puntos" data-where="tipo=todas" data-fmt="n" class="dash-skeleton">—</span></b></button>
+        <button type="button" class="er-tile" data-view="ev" data-pick="ultra"><span class="l">Ultrarrápida · 150 kW o más</span><b><span data-source="e_kpis" data-field="puntos" data-where="tipo=ultra" data-fmt="n" class="dash-skeleton">—</span></b></button>
+        <button type="button" class="er-tile" data-view="ev" data-pick="rapida"><span class="l">Rápida · 23 a 149 kW</span><b><span data-source="e_kpis" data-field="puntos" data-where="tipo=rapida" data-fmt="n" class="dash-skeleton">—</span></b></button>
+        <button type="button" class="er-tile" data-view="ev" data-pick="lenta"><span class="l">Lenta · hasta 22 kW</span><b><span data-source="e_kpis" data-field="puntos" data-where="tipo=lenta" data-fmt="n" class="dash-skeleton">—</span></b></button>
+      </div>
+    </div>
+  </nav>
+  <p class="er-hint" id="er-hint">Puedes cambiar de observatorio en cualquier momento desde estos botones.</p>
+</div>
+
+<div id="er-view-carb" hidden>
+
+
+<div class="ob">
+  <header class="hd" id="c-inicio">
+    <div class="eyebrow">Hamilton Global Intelligence · Observatorio</div>
+    <h1>Observatorio de carburantes</h1>
+    <p class="take" id="c-takeaway">En España, el diésel cuesta de media
+      <b data-source="c_kpis" data-field="hoy" data-where="combustible=diesel" data-fmt="p" class="dash-skeleton">—</b> €/l
+      (<span data-source="c_kpis" data-field="fecha" data-where="combustible=diesel" data-fmt="d" class="dash-skeleton">—</span>):
+      <span id="c-tw-dir">ha subido</span> <b data-source="c_kpis" data-field="var_inicio_cts" data-where="combustible=diesel" data-fmt="c" class="dash-skeleton">—</b> céntimos desde el
+      <span data-source="c_kpis" data-field="fecha_inicio" data-where="combustible=diesel" data-fmt="d" class="dash-skeleton">—</span>
+      (<b data-source="c_kpis" data-field="var_inicio_pct" data-where="combustible=diesel" data-fmt="sc" class="dash-skeleton">—</b> %) y ya
+      <span id="c-tw-gap">supera</span> a la gasolina 95 en
+      <b data-source="c_kpis" data-field="hoy" data-where="combustible=diesel_menos_g95" data-fmt="c" class="dash-skeleton">—</b> céntimos por litro.</p>
+  </header>
+
+  <section class="strip" id="c-precios" aria-label="Precio medio en España">
+    <button type="button" class="card fuel" data-fuel="diesel">
+      <div class="lab">Diésel · media España</div>
+      <div class="big"><span data-source="c_kpis" data-field="hoy" data-where="combustible=diesel" data-fmt="p" class="dash-skeleton">—</span> €/l</div>
+      <div class="sub"><span data-source="c_kpis" data-field="var7_cts" data-where="combustible=diesel" data-fmt="sc" data-trend="1" class="dash-skeleton">—</span> cts en 7 días · <span data-source="c_kpis" data-field="var_inicio_cts" data-where="combustible=diesel" data-fmt="sc" data-trend="1" class="dash-skeleton">—</span> desde el <span data-source="c_kpis" data-field="fecha_inicio" data-where="combustible=diesel" data-fmt="d" class="dash-skeleton">—</span></div>
+    </button>
+    <button type="button" class="card fuel" data-fuel="gasolina_95">
+      <div class="lab">Gasolina 95 · media España</div>
+      <div class="big"><span data-source="c_kpis" data-field="hoy" data-where="combustible=gasolina_95" data-fmt="p" class="dash-skeleton">—</span> €/l</div>
+      <div class="sub"><span data-source="c_kpis" data-field="var7_cts" data-where="combustible=gasolina_95" data-fmt="sc" data-trend="1" class="dash-skeleton">—</span> cts en 7 días · <span data-source="c_kpis" data-field="var_inicio_cts" data-where="combustible=gasolina_95" data-fmt="sc" data-trend="1" class="dash-skeleton">—</span> desde el <span data-source="c_kpis" data-field="fecha_inicio" data-where="combustible=gasolina_95" data-fmt="d" class="dash-skeleton">—</span></div>
+    </button>
+    <button type="button" class="card fuel" data-fuel="gasolina_98">
+      <div class="lab">Gasolina 98 · media España</div>
+      <div class="big"><span data-source="c_kpis" data-field="hoy" data-where="combustible=gasolina_98" data-fmt="p" class="dash-skeleton">—</span> €/l</div>
+      <div class="sub"><span data-source="c_kpis" data-field="var7_cts" data-where="combustible=gasolina_98" data-fmt="sc" data-trend="1" class="dash-skeleton">—</span> cts en 7 días · <span data-source="c_kpis" data-field="var_inicio_cts" data-where="combustible=gasolina_98" data-fmt="sc" data-trend="1" class="dash-skeleton">—</span> desde el <span data-source="c_kpis" data-field="fecha_inicio" data-where="combustible=gasolina_98" data-fmt="d" class="dash-skeleton">—</span></div>
+    </button>
+    <button type="button" class="card fuel" data-fuel="diesel_premium">
+      <div class="lab">Diésel premium · media España</div>
+      <div class="big"><span data-source="c_kpis" data-field="hoy" data-where="combustible=diesel_premium" data-fmt="p" class="dash-skeleton">—</span> €/l</div>
+      <div class="sub"><span data-source="c_kpis" data-field="var7_cts" data-where="combustible=diesel_premium" data-fmt="sc" data-trend="1" class="dash-skeleton">—</span> cts en 7 días · <span data-source="c_kpis" data-field="var_inicio_cts" data-where="combustible=diesel_premium" data-fmt="sc" data-trend="1" class="dash-skeleton">—</span> desde el <span data-source="c_kpis" data-field="fecha_inicio" data-where="combustible=diesel_premium" data-fmt="d" class="dash-skeleton">—</span></div>
+    </button>
+  </section>
+
+  <section class="card" id="c-claves">
+    <h2 class="ctitle">Cinco claves del mercado hoy</h2>
+    <p class="cnote">Titulares calculados a partir de los datos del día · <span data-source="c_insights" data-field="texto3" data-where="clave=semana" data-fmt="dl" class="dash-skeleton">—</span></p>
+    <ol class="ins">
+      <li>
+        <div class="h">En una semana, la gasolina 95 <span data-source="c_insights" data-field="texto1" data-where="clave=semana" data-fmt="t" class="dash-skeleton">—</span> <b data-source="c_insights" data-field="valor" data-where="clave=semana" data-fmt="c" class="dash-skeleton">—</b> cts y el diésel <span data-source="c_insights" data-field="texto2" data-where="clave=semana" data-fmt="t" class="dash-skeleton">—</span> <b data-source="c_insights" data-field="valor2" data-where="clave=semana" data-fmt="c" class="dash-skeleton">—</b> cts</div>
+        <div class="s">Medias de España. Hoy la gasolina 98 está en <b data-source="c_insights" data-field="valor3" data-where="clave=semana" data-fmt="p" class="dash-skeleton">—</b> €/l y el diésel premium en <b data-source="c_insights" data-field="valor4" data-where="clave=semana" data-fmt="p" class="dash-skeleton">—</b> €/l.</div>
+      </li>
+      <li>
+        <div class="h">El diésel ya cuesta <b data-source="c_insights" data-field="valor" data-where="clave=brecha" data-fmt="c" class="dash-skeleton">—</b> céntimos más que la gasolina 95</div>
+        <div class="s">El <span data-source="c_insights" data-field="texto1" data-where="clave=brecha" data-fmt="dl" class="dash-skeleton">—</span> la diferencia era de <b data-source="c_insights" data-field="valor2" data-where="clave=brecha" data-fmt="c0" class="dash-skeleton">—</b> cts. Llenar 50 litros de diésel cuesta hoy <b data-source="c_insights" data-field="valor3" data-where="clave=brecha" data-fmt="eur" class="dash-skeleton">—</b> € más que entonces.</div>
+      </li>
+      <li>
+        <div class="h">Llenar de gasolina 95 en <b data-source="c_insights" data-field="texto1" data-where="clave=territorio" data-fmt="t" class="dash-skeleton">—</b> cuesta <b data-source="c_insights" data-field="valor" data-where="clave=territorio" data-fmt="c" class="dash-skeleton">—</b> cts por litro más que en <b data-source="c_insights" data-field="texto2" data-where="clave=territorio" data-fmt="t" class="dash-skeleton">—</b></div>
+        <div class="s">Es la mayor distancia entre comunidades peninsulares y Baleares. Canarias, Ceuta y Melilla tienen fiscalidad propia y van aparte: Canarias está en <b data-source="c_insights" data-field="valor2" data-where="clave=territorio" data-fmt="p" class="dash-skeleton">—</b> €/l.</div>
+      </li>
+      <li>
+        <div class="h"><b data-source="c_insights" data-field="texto1" data-where="clave=marcas" data-fmt="t" class="dash-skeleton">—</b> suman el <b data-source="c_insights" data-field="valor" data-where="clave=marcas" data-fmt="c0" class="dash-skeleton">—</b> % de las gasolineras de España</div>
+        <div class="s">Y venden la gasolina 95 <b data-source="c_insights" data-field="valor2" data-where="clave=marcas" data-fmt="c" class="dash-skeleton">—</b> cts <span data-source="c_insights" data-field="texto2" data-where="clave=marcas" data-fmt="t" class="dash-skeleton">—</span> la media nacional. ¿Qué hace que el conductor pague ese extra: ubicación, servicios, fidelización o confianza en la marca?</div>
+      </li>
+      <li>
+        <div class="h">En <b data-source="c_insights" data-field="texto1" data-where="clave=dispersion" data-fmt="t" class="dash-skeleton">—</b>, la gasolinera más cara cobra el diésel <b data-source="c_insights" data-field="valor" data-where="clave=dispersion" data-fmt="c" class="dash-skeleton">—</b> cts más que la más barata</div>
+        <div class="s">Misma ciudad (<span data-source="c_insights" data-field="texto2" data-where="clave=dispersion" data-fmt="t" class="dash-skeleton">—</span>, <b data-source="c_insights" data-field="valor3" data-where="clave=dispersion" data-fmt="n" class="dash-skeleton">—</b> gasolineras), mismo día: <b data-source="c_insights" data-field="valor2" data-where="clave=dispersion" data-fmt="eur" class="dash-skeleton">—</b> € de diferencia en un depósito de 50 litros.</div>
+      </li>
+    </ol>
+  </section>
+
+  <div class="maprow">
+    <section class="card" id="c-mapa">
+      <div class="bar">
+        <div class="seg" id="c-fuelSeg" role="group" aria-label="Carburante">
+          <button type="button" data-fuel="diesel">Diésel</button>
+          <button type="button" data-fuel="gasolina_95">Gasolina 95</button>
+          <button type="button" data-fuel="gasolina_98">Gasolina 98</button>
+          <button type="button" data-fuel="diesel_premium">Diésel premium</button>
+        </div>
+        <div class="seg" id="c-levelSeg" role="group" aria-label="Nivel">
+          <button type="button" data-level="ccaa">Comunidades</button>
+          <button type="button" data-level="provincia">Provincias</button>
+          <button type="button" data-level="gasolinera">Gasolineras</button>
+        </div>
+        <input class="search" id="c-muniSearch" list="c-muniList" placeholder="Buscar municipio…" aria-label="Buscar municipio">
+        <datalist id="c-muniList"></datalist>
+      </div>
+      <div style="margin-top: var(--cds-gap-sm)"><nav class="crumbs" id="c-crumbs" aria-label="Ámbito"></nav></div>
+      <h2 class="ctitle" id="c-mapTitle" style="margin-top: var(--cds-gap-md)">Mapa de precios</h2>
+      <p class="cnote" id="c-mapNote">Pulsa una zona para bajar de nivel.</p>
+      <div class="mapwrap dash-skeleton" id="c-mapBox" data-source="c_estaciones limites c_por_ccaa c_por_provincia"></div>
+      <div class="legend" id="c-legend"></div>
+      <div class="tip" id="c-mapTip"></div>
+    </section>
+    <section class="card bigt" id="c-ranking-ccaa">
+      <h2 class="ctitle">Precio medio por comunidad</h2>
+      <p class="cnote" id="c-ccaaNote">De más barata a más cara</p>
+      <div class="chart dash-skeleton" id="c-ccaaBox" data-source="c_por_ccaa c_media_hoy"></div>
+      <div class="tip" id="c-ccaaTip"></div>
+    </section>
+  </div>
+
+  <section class="card brandcard" id="c-marcas">
+    <h2 class="ctitle" id="c-brandTitle">Precio por marca</h2>
+    <p class="cnote" id="c-brandNote">Las 15 marcas con más gasolineras, frente a la media del ámbito</p>
+    <p class="bcall" id="c-brandCall"></p>
+    <div class="chart dash-skeleton" id="c-brandBox" data-source="c_marcas_ambito"></div>
+  </section>
+
+  <section class="grid2">
+    <div class="card" id="c-evolucion">
+      <h2 class="ctitle">Evolución del precio medio</h2>
+      <p class="cnote" id="c-trendNote">Media diaria con impuestos, €/l</p>
+      <div class="chart dash-skeleton" id="c-trendBox" data-source="c_historico_espana c_historico_provincias c_historico_ccaa"></div>
+      <div class="tip" id="c-trendTip"></div>
+    </div>
+    <div class="card bigt" id="c-baratas">
+      <h2 class="ctitle">Las gasolineras más baratas</h2>
+      <p class="cnote" id="c-cheapNote">Las 15 más baratas del ámbito elegido</p>
+      <div class="toppanel cheap">
+        <h3 class="toph"><span class="ico">▼</span><span id="c-cheapHead">Las 15 más baratas</span><span class="avg" id="c-avgStations"></span></h3>
+        <div class="tbox">
+          <table class="toptable" id="c-cheapTable" data-source="c_estaciones" data-row-key="id">
+            <thead><tr>
+              <th>#</th>
+              <th data-field="rotulo">Gasolinera</th>
+              <th data-field="municipio">Municipio</th>
+              <th data-field="direccion">Dirección</th>
+              <th class="num" id="c-thCheap" data-field="diesel">€/l</th>
+            </tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card bigt" id="c-top10">
+    <div class="bar" style="justify-content: space-between">
+      <h2 class="ctitle" id="c-topTitle">Top 10 municipios</h2>
+      <div class="seg" id="c-minSeg" role="group" aria-label="Mínimo de gasolineras">
+        <button type="button" data-min="1">Todos</button>
+        <button type="button" data-min="3">3+ gasolineras</button>
+        <button type="button" data-min="5">5+ gasolineras</button>
+      </div>
+    </div>
+    <p class="cnote" id="c-topNote">Precio medio por municipio. Pulsa una fila para verlo en el mapa.</p>
+    <div class="topgrid">
+      <div class="toppanel cheap">
+        <h3 class="toph"><span class="ico">▼</span>Los 10 más baratos<span class="avg" id="c-avgCheap"></span></h3>
+        <table class="toptable" id="c-topCheap" data-source="c_por_municipio" data-row-key="clave">
+          <thead><tr><th>#</th><th data-field="municipio">Municipio</th><th data-field="provincia">Provincia</th><th class="num" data-field="gasolineras">Gasol.</th><th class="num topf" data-field="diesel">€/l</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="toppanel dear">
+        <h3 class="toph"><span class="ico">▲</span>Los 10 más caros<span class="avg" id="c-avgDear"></span></h3>
+        <table class="toptable" id="c-topDear" data-source="c_por_municipio" data-row-key="clave">
+          <thead><tr><th>#</th><th data-field="municipio">Municipio</th><th data-field="provincia">Provincia</th><th class="num" data-field="gasolineras">Gasol.</th><th class="num topf" data-field="diesel">€/l</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="card bigt" id="c-municipios">
+    <h2 class="ctitle">Todos los municipios</h2>
+    <p class="cnote" id="c-muniNote">Precio medio, mínimo y máximo en cada municipio del ámbito elegido. Pulsa una fila para verlo en el mapa.</p>
+    <input class="search" id="c-muniFilter" placeholder="Filtrar municipio o provincia…" aria-label="Filtrar municipios" style="margin-bottom: var(--cds-gap-sm)">
+    <div class="toppanel neutral">
+      <h3 class="toph"><span class="ico">≡</span><span id="c-muniHead">Municipios</span><span class="avg" id="c-muniLegend"></span></h3>
+      <div class="tbox">
+        <table class="toptable" id="c-muniTable" data-source="c_por_municipio" data-row-key="clave">
+          <thead><tr>
+            <th>#</th>
+            <th data-field="municipio"><button type="button" data-sort="municipio">Municipio</button></th>
+            <th data-field="provincia"><button type="button" data-sort="provincia">Provincia</button></th>
+            <th class="num" data-field="gasolineras"><button type="button" data-sort="gasolineras">Gasol.</button></th>
+            <th class="num" id="c-thMedia" data-field="diesel"><button type="button" data-sort="media">Media €/l</button></th>
+            <th class="num" id="c-thMin" data-field="diesel_min"><button type="button" data-sort="min">Mín.</button></th>
+            <th class="num" id="c-thMax" data-field="diesel_max"><button type="button" data-sort="max">Máx.</button></th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="card" id="c-noticias">
+    <h2 class="ctitle">Noticias sobre el precio de los carburantes</h2>
+    <p class="cnote">Últimos titulares de la prensa española, actualizados cada día</p>
+    <div class="news dash-skeleton" id="c-newsBox" data-source="c_noticias"></div>
+  </section>
+
+  <section class="card hook" id="c-hamilton">
+    <p><span class="brand">El dato dice qué pasa. Falta saber por qué.</span><br>
+    ¿Cuántos conductores cambian de gasolinera por cinco céntimos? ¿Por qué la mayoría sigue repostando en las grandes marcas aunque las low cost estén a la vuelta de la esquina? ¿Qué pesa más, el precio, la cercanía, los servicios o la tarjeta de fidelización? Hamilton cruza los datos públicos con la voz del consumidor para responderlo.</p>
+  </section>
+
+  <p class="foot">Precios por gasolinera: Geoportal de Gasolineras del Ministerio para la Transición Ecológica. Series históricas: Reposta Hoy (CC BY 4.0) hasta el 22 de octubre de 2026 y, desde entonces, media diaria propia con el mismo método. Límites: IGN vía es-atlas. Noticias: titulares de Google News con enlace a cada medio. Canarias, en recuadro.</p>
+</div>
+
+
+</div>
+<div id="er-view-ev" hidden>
+
+
+<div class="ob">
+  <header class="hd" id="e-inicio">
+    <div class="eyebrow">Hamilton Global Intelligence · Observatorio</div>
+    <h1>Observatorio de la recarga eléctrica</h1>
+    <p class="take" id="e-takeaway">España tiene
+      <b data-source="e_kpis" data-field="puntos" data-where="tipo=todas" data-fmt="n" class="dash-skeleton">—</b> puntos de recarga en
+      <b data-source="e_kpis" data-field="estaciones" data-where="tipo=todas" data-fmt="n" class="dash-skeleton">—</b> estaciones del registro oficial
+      (<span data-source="e_kpis" data-field="fecha" data-where="tipo=todas" data-fmt="dl" class="dash-skeleton">—</span>):
+      <b data-source="e_kpis" data-field="por100k" data-where="tipo=todas" data-fmt="d1" class="dash-skeleton">—</b> por cada 100.000 habitantes.
+      Solo el <b data-source="e_kpis" data-field="pct_puntos" data-where="tipo=ultra" data-fmt="d1" class="dash-skeleton">—</b> % de los puntos está en estaciones ultrarrápidas, y en el último mes el registro ha sumado
+      <b data-source="e_kpis" data-field="var_est" data-where="tipo=todas" data-fmt="n" class="dash-skeleton">—</b> estaciones.</p>
+  </header>
+
+  <section class="strip" id="e-tipos" aria-label="Puntos de recarga por tipo">
+    <button type="button" class="card fuel kpi" data-tipo="todas">
+      <div class="lab">Todos los puntos · España</div>
+      <div class="big"><span data-source="e_kpis" data-field="puntos" data-where="tipo=todas" data-fmt="n" class="dash-skeleton">—</span></div>
+      <div class="sub"><span data-source="e_kpis" data-field="estaciones" data-where="tipo=todas" data-fmt="n" class="dash-skeleton">—</span> estaciones · <span data-source="e_kpis" data-field="var_puntos" data-where="tipo=todas" data-fmt="sn" data-trend="1" class="dash-skeleton">—</span> puntos en 30 días</div>
+    </button>
+    <button type="button" class="card fuel kpi" data-tipo="ultra">
+      <div class="lab">Ultrarrápida · 150 kW o más</div>
+      <div class="big"><span data-source="e_kpis" data-field="puntos" data-where="tipo=ultra" data-fmt="n" class="dash-skeleton">—</span></div>
+      <div class="sub"><span data-source="e_kpis" data-field="pct_puntos" data-where="tipo=ultra" data-fmt="d1" class="dash-skeleton">—</span> % de los puntos · <span data-source="e_kpis" data-field="var_puntos" data-where="tipo=ultra" data-fmt="sn" data-trend="1" class="dash-skeleton">—</span> en 30 días</div>
+    </button>
+    <button type="button" class="card fuel kpi" data-tipo="rapida">
+      <div class="lab">Rápida · 23 a 149 kW</div>
+      <div class="big"><span data-source="e_kpis" data-field="puntos" data-where="tipo=rapida" data-fmt="n" class="dash-skeleton">—</span></div>
+      <div class="sub"><span data-source="e_kpis" data-field="pct_puntos" data-where="tipo=rapida" data-fmt="d1" class="dash-skeleton">—</span> % de los puntos · <span data-source="e_kpis" data-field="var_puntos" data-where="tipo=rapida" data-fmt="sn" data-trend="1" class="dash-skeleton">—</span> en 30 días</div>
+    </button>
+    <button type="button" class="card fuel kpi" data-tipo="lenta">
+      <div class="lab">Lenta y semirrápida · hasta 22 kW</div>
+      <div class="big"><span data-source="e_kpis" data-field="puntos" data-where="tipo=lenta" data-fmt="n" class="dash-skeleton">—</span></div>
+      <div class="sub"><span data-source="e_kpis" data-field="pct_puntos" data-where="tipo=lenta" data-fmt="d1" class="dash-skeleton">—</span> % de los puntos · <span data-source="e_kpis" data-field="var_puntos" data-where="tipo=lenta" data-fmt="sn" data-trend="1" class="dash-skeleton">—</span> en 30 días</div>
+    </button>
+  </section>
+
+  <section class="card" id="e-claves">
+    <h2 class="ctitle">Cinco claves de la recarga hoy</h2>
+    <p class="cnote">Titulares calculados a partir del registro del <span data-source="e_kpis" data-field="fecha" data-where="tipo=todas" data-fmt="dl" class="dash-skeleton">—</span></p>
+    <ol class="ins">
+      <li>
+        <div class="h"><b data-source="e_insights" data-field="texto1" data-where="clave=densidad" data-fmt="t" class="dash-skeleton">—</b> tiene <b data-source="e_insights" data-field="valor2" data-where="clave=densidad" data-fmt="d1" class="dash-skeleton">—</b> veces más puntos por habitante que <b data-source="e_insights" data-field="texto2" data-where="clave=densidad" data-fmt="t" class="dash-skeleton">—</b></div>
+        <div class="s"><b data-source="e_insights" data-field="valor" data-where="clave=densidad" data-fmt="d1" class="dash-skeleton">—</b> frente a <b data-source="e_insights" data-field="valor3" data-where="clave=densidad" data-fmt="d1" class="dash-skeleton">—</b> puntos por cada 100.000 habitantes. La media de España es <b data-source="e_insights" data-field="valor4" data-where="clave=densidad" data-fmt="d1" class="dash-skeleton">—</b> (sin Ceuta ni Melilla en la comparación).</div>
+      </li>
+      <li>
+        <div class="h">Solo el <b data-source="e_insights" data-field="valor" data-where="clave=ultra" data-fmt="d1" class="dash-skeleton">—</b> % de las estaciones permite cargar a 150 kW o más</div>
+        <div class="s">Son <b data-source="e_insights" data-field="valor2" data-where="clave=ultra" data-fmt="n" class="dash-skeleton">—</b> estaciones con <b data-source="e_insights" data-field="valor3" data-where="clave=ultra" data-fmt="n" class="dash-skeleton">—</b> puntos. La provincia con más puntos ultrarrápidos es <b data-source="e_insights" data-field="texto1" data-where="clave=ultra" data-fmt="t" class="dash-skeleton">—</b> (<b data-source="e_insights" data-field="valor4" data-where="clave=ultra" data-fmt="n" class="dash-skeleton">—</b>).</div>
+      </li>
+      <li>
+        <div class="h"><b data-source="e_insights" data-field="texto1" data-where="clave=operadores" data-fmt="t" class="dash-skeleton">—</b> gestionan el <b data-source="e_insights" data-field="valor" data-where="clave=operadores" data-fmt="d1" class="dash-skeleton">—</b> % de los puntos</div>
+        <div class="s">El resto se reparte entre <b data-source="e_insights" data-field="valor2" data-where="clave=operadores" data-fmt="n" class="dash-skeleton">—</b> operadores más. ¿Elige el conductor la red por precio, por cercanía, por su app o por confianza en la marca?</div>
+      </li>
+      <li>
+        <div class="h">En un mes, el registro suma <b data-source="e_insights" data-field="valor" data-where="clave=altas" data-fmt="n" class="dash-skeleton">—</b> estaciones y <b data-source="e_insights" data-field="valor2" data-where="clave=altas" data-fmt="n" class="dash-skeleton">—</b> puntos</div>
+        <div class="s">Desde el <span data-source="e_insights" data-field="texto2" data-where="clave=altas" data-fmt="dl" class="dash-skeleton">—</span>. La comunidad con más estaciones nuevas es <b data-source="e_insights" data-field="texto1" data-where="clave=altas" data-fmt="t" class="dash-skeleton">—</b> (<b data-source="e_insights" data-field="valor3" data-where="clave=altas" data-fmt="n" class="dash-skeleton">—</b>).</div>
+      </li>
+      <li>
+        <div class="h">La mitad de los puntos está en solo <b data-source="e_insights" data-field="valor" data-where="clave=concentracion" data-fmt="n" class="dash-skeleton">—</b> municipios</div>
+        <div class="s">Encabeza <b data-source="e_insights" data-field="texto1" data-where="clave=concentracion" data-fmt="t" class="dash-skeleton">—</b> con <b data-source="e_insights" data-field="valor2" data-where="clave=concentracion" data-fmt="n" class="dash-skeleton">—</b> puntos, seguido de <b data-source="e_insights" data-field="texto2" data-where="clave=concentracion" data-fmt="t" class="dash-skeleton">—</b> (<b data-source="e_insights" data-field="valor3" data-where="clave=concentracion" data-fmt="n" class="dash-skeleton">—</b>). Hay recarga en <b data-source="e_insights" data-field="valor4" data-where="clave=concentracion" data-fmt="n" class="dash-skeleton">—</b> municipios.</div>
+      </li>
+    </ol>
+  </section>
+
+  <div class="maprow">
+    <section class="card" id="e-mapa">
+      <div class="bar">
+        <div class="seg" id="e-tipoSeg" role="group" aria-label="Tipo de carga">
+          <button type="button" data-tipo="todas">Todas</button>
+          <button type="button" data-tipo="ultra">Ultrarrápida</button>
+          <button type="button" data-tipo="rapida">Rápida</button>
+          <button type="button" data-tipo="lenta">Lenta</button>
+        </div>
+        <div class="seg" id="e-levelSeg" role="group" aria-label="Nivel">
+          <button type="button" data-level="ccaa">Comunidades</button>
+          <button type="button" data-level="provincia">Provincias</button>
+          <button type="button" data-level="estacion">Estaciones</button>
+        </div>
+        <input class="search" id="e-muniSearch" list="e-muniList" placeholder="Buscar municipio…" aria-label="Buscar municipio">
+        <datalist id="e-muniList"></datalist>
+      </div>
+      <div style="margin-top: var(--cds-gap-sm)"><nav class="crumbs" id="e-crumbs" aria-label="Ámbito"></nav></div>
+      <h2 class="ctitle" id="e-mapTitle" style="margin-top: var(--cds-gap-md)">Mapa de la recarga</h2>
+      <p class="cnote" id="e-mapNote">Pulsa una zona para bajar de nivel.</p>
+      <div class="mapwrap dash-skeleton" id="e-mapBox" data-source="e_estaciones limites e_por_ccaa e_por_provincia"></div>
+      <div class="legend" id="e-legend"></div>
+      <div class="tip" id="e-mapTip"></div>
+    </section>
+    <section class="card bigt" id="e-ranking-ccaa">
+      <div class="bar" style="justify-content: space-between">
+        <h2 class="ctitle" id="e-ccaaTitle">Puntos por cada 100.000 habitantes</h2>
+      </div>
+      <p class="cnote" id="e-ccaaNote">De más a menos puntos por habitante</p>
+      <div class="chart dash-skeleton" id="e-ccaaBox" data-source="e_por_ccaa e_por_provincia e_kpis"></div>
+      <div class="tip" id="e-ccaaTip"></div>
+    </section>
+  </div>
+
+  <section class="card" id="e-mix">
+    <h2 class="ctitle" id="e-mixTitle">Proporción de cada tipo de cargador</h2>
+    <p class="cnote" id="e-mixNote">Reparto de los puntos de recarga entre ultrarrápida, rápida y lenta</p>
+    <div class="legend" id="e-mixLegend"></div>
+    <div class="chart dash-skeleton" id="e-mixBox" data-source="e_territorios e_kpis"></div>
+    <p class="bcall" id="e-mixChange" data-source="e_historico_ambito" style="margin-top: var(--cds-gap-sm)"></p>
+    <div class="tip" id="e-mixTip"></div>
+  </section>
+
+  <section class="card brandcard" id="e-operadores">
+    <h2 class="ctitle" id="e-opTitle">Cuota por operador</h2>
+    <p class="cnote" id="e-opNote">Los 40 operadores con más puntos del ámbito elegido</p>
+    <p class="bcall" id="e-opCall"></p>
+    <div class="chart dash-skeleton" id="e-opBox" data-source="e_operadores_ambito"></div>
+    <div class="tip" id="e-opTip"></div>
+  </section>
+
+  <section class="card" id="e-historico">
+    <h2 class="ctitle" id="e-histTitle">Evolución de los puntos de recarga</h2>
+    <p class="cnote" id="e-histNote">Puntos en el registro cada día, en total y por tipo de carga</p>
+    <div class="chart dash-skeleton" id="e-histBox" data-source="e_historico_ambito"></div>
+    <div class="tip" id="e-histTip"></div>
+  </section>
+
+  <section class="grid2">
+    <div class="card" id="e-evolucion">
+      <h2 class="ctitle">Altas netas en el último mes</h2>
+      <p class="cnote" id="e-trendNote">Puntos ganados o perdidos desde el primer día de la serie</p>
+      <div class="chart dash-skeleton" id="e-trendBox" data-source="e_historico_ambito"></div>
+      <div class="tip" id="e-trendTip"></div>
+    </div>
+    <div class="card bigt" id="e-altas">
+      <h2 class="ctitle">Estaciones nuevas</h2>
+      <p class="cnote" id="e-altasNote">Estaciones que han entrado en el registro en el último mes</p>
+      <div class="toppanel cheap">
+        <h3 class="toph"><span class="ico">＋</span><span id="e-altasHead">Altas recientes</span><span class="avg" id="e-altasAvg"></span></h3>
+        <div class="tbox">
+          <table class="toptable" id="e-altasTable" data-source="e_estaciones" data-row-key="id">
+            <thead><tr>
+              <th>#</th>
+              <th data-field="alta">Alta</th>
+              <th data-field="nombre">Estación</th>
+              <th data-field="operador">Operador</th>
+              <th data-field="municipio">Municipio</th>
+              <th class="num" data-field="puntos">Puntos</th>
+              <th class="num" data-field="kw">kW</th>
+            </tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card bigt" id="e-territorios">
+    <div class="bar" style="justify-content: space-between">
+      <h2 class="ctitle" id="e-terTitle">Puntos de recarga por comunidad y provincia</h2>
+      <div class="seg" id="e-terSeg" role="group" aria-label="Detalle">
+        <button type="button" data-ter="ccaa">Solo comunidades</button>
+        <button type="button" data-ter="prov">Con provincias</button>
+      </div>
+    </div>
+    <p class="cnote" id="e-terNote">Estaciones y puntos por tipo de carga. Pulsa una fila para verla en el mapa.</p>
+    <div class="toppanel neutral">
+      <h3 class="toph"><span class="ico">≡</span><span id="e-terHead">Comunidades y provincias</span><span class="avg" id="e-terLegend"></span></h3>
+      <div class="tbox">
+        <table class="toptable" id="e-terTable" data-source="e_territorios" data-row-key="clave">
+          <thead><tr>
+            <th>#</th>
+            <th data-field="nombre"><button type="button" data-sort="nombre">Territorio</button></th>
+            <th class="num" data-field="est_todas"><button type="button" data-sort="est_todas">Estac.</button></th>
+            <th class="num" data-field="pts_todas"><button type="button" data-sort="pts_todas">Puntos</button></th>
+            <th class="num" data-field="pts_ultra"><button type="button" data-sort="pts_ultra">Ultrarráp.</button></th>
+            <th class="num" data-field="pts_rapida"><button type="button" data-sort="pts_rapida">Rápida</button></th>
+            <th class="num" data-field="pts_lenta"><button type="button" data-sort="pts_lenta">Lenta</button></th>
+            <th class="num" data-field="dens_todas"><button type="button" data-sort="dens_todas">Por 100.000 hab.</button></th>
+            <th class="num" data-field="cuota"><button type="button" data-sort="cuota">% España</button></th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="card" id="e-noticias">
+    <h2 class="ctitle">Noticias sobre la recarga y el coche eléctrico</h2>
+    <p class="cnote">Últimos titulares de la prensa española, actualizados cada día</p>
+    <div class="news dash-skeleton" id="e-newsBox" data-source="e_noticias"></div>
+  </section>
+
+  <section class="card hook" id="e-hamilton">
+    <p><span class="brand">El mapa dice dónde se puede cargar. Falta saber por qué no se compra.</span><br>
+    ¿Pesa más la ansiedad por la autonomía o el precio del coche? ¿Quién puede cargar en casa y quién depende de la red pública? ¿Qué operador genera confianza y cuál se evita tras una mala experiencia con un cargador fuera de servicio? Hamilton cruza los datos públicos con la voz del conductor para responderlo.</p>
+  </section>
+
+  <p class="foot">Estaciones y puntos: registro oficial de puntos de recarga del Ministerio para la Transición Ecológica, publicado por la DGT en el Punto de Acceso Nacional (DATEX II, CC BY), descargado cada día. Cada estación se clasifica por su potencia máxima y todos sus puntos cuentan en ese tipo; el municipio se asigna por coordenadas. Las patronales ANFAC y AEDIVE publican totales mayores con metodologías propias (ver noticias). Población: INE, 1 de enero de 2025. Límites: IGN vía es-atlas. Canarias, en recuadro.</p>
+</div>
+
+
+</div>
+</div>
+<script src="vendor/d3.min.js"></script>
+<script src="dash.js"></script>
+<script src="carb.js"></script>
+<script src="ev.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
