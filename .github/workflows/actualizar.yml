@@ -2,13 +2,14 @@ name: Actualizar datos y publicar
 
 on:
   schedule:
-    # Horas en UTC. 05:20 UTC = 06:20 (invierno) / 07:20 (verano) en Madrid.
-    - cron: "20 5 * * *"
-    # Segunda pasada de respaldo: GitHub a veces se salta ejecuciones programadas.
-    - cron: "20 11 * * *"
-  workflow_dispatch: {}   # botón "Run workflow" para lanzarlo a mano
+    # Horas en UTC (Madrid = UTC+1 en invierno, UTC+2 en verano).
+    # GitHub puede retrasar o saltarse ejecuciones programadas: por eso hay tres.
+    - cron: "37 6 * * *"    # 07:37 Madrid (invierno)
+    - cron: "13 8 * * *"    # 09:13 Madrid (invierno), respaldo
+    - cron: "41 11 * * *"   # 12:41 Madrid (invierno), respaldo
+  workflow_dispatch: {}     # botón "Run workflow" para lanzarlo a mano
   push:
-    branches: [main]      # al cambiar la web, se vuelve a publicar
+    branches: [main]        # al cambiar la web, se vuelve a publicar
 
 permissions:
   contents: write
