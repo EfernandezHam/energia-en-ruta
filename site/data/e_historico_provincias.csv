@@ -4680,3 +4680,154 @@ fecha,cod_prov,provincia,ccaa,tipo,estaciones,puntos
 2026-10-29,50,Zaragoza,Aragón,rapida,79,174
 2026-10-29,50,Zaragoza,Aragón,ultra,33,102
 2026-10-29,51,Ceuta,Ceuta,lenta,1,6
+2026-10-30,01,Álava,País Vasco,lenta,46,201
+2026-10-30,01,Álava,País Vasco,rapida,45,139
+2026-10-30,01,Álava,País Vasco,ultra,27,115
+2026-10-30,02,Albacete,Castilla-La Mancha,lenta,32,117
+2026-10-30,02,Albacete,Castilla-La Mancha,rapida,45,125
+2026-10-30,02,Albacete,Castilla-La Mancha,ultra,13,71
+2026-10-30,03,Alicante,C. Valenciana,lenta,401,1190
+2026-10-30,03,Alicante,C. Valenciana,rapida,223,531
+2026-10-30,03,Alicante,C. Valenciana,ultra,44,162
+2026-10-30,04,Almería,Andalucía,lenta,67,189
+2026-10-30,04,Almería,Andalucía,rapida,51,98
+2026-10-30,04,Almería,Andalucía,ultra,17,122
+2026-10-30,05,Ávila,Castilla y León,lenta,22,54
+2026-10-30,05,Ávila,Castilla y León,rapida,23,50
+2026-10-30,05,Ávila,Castilla y León,ultra,7,52
+2026-10-30,06,Badajoz,Extremadura,lenta,30,98
+2026-10-30,06,Badajoz,Extremadura,rapida,60,131
+2026-10-30,06,Badajoz,Extremadura,ultra,14,83
+2026-10-30,07,Illes Balears,Illes Balears,lenta,396,727
+2026-10-30,07,Illes Balears,Illes Balears,rapida,115,254
+2026-10-30,07,Illes Balears,Illes Balears,ultra,21,38
+2026-10-30,08,Barcelona,Catalunya,lenta,1001,3726
+2026-10-30,08,Barcelona,Catalunya,rapida,436,1079
+2026-10-30,08,Barcelona,Catalunya,ultra,87,356
+2026-10-30,09,Burgos,Castilla y León,lenta,57,155
+2026-10-30,09,Burgos,Castilla y León,rapida,66,141
+2026-10-30,09,Burgos,Castilla y León,ultra,38,180
+2026-10-30,10,Cáceres,Extremadura,lenta,82,158
+2026-10-30,10,Cáceres,Extremadura,rapida,58,119
+2026-10-30,10,Cáceres,Extremadura,ultra,11,94
+2026-10-30,11,Cádiz,Andalucía,lenta,141,500
+2026-10-30,11,Cádiz,Andalucía,rapida,82,189
+2026-10-30,11,Cádiz,Andalucía,ultra,28,82
+2026-10-30,12,Castellón,C. Valenciana,lenta,74,280
+2026-10-30,12,Castellón,C. Valenciana,rapida,64,139
+2026-10-30,12,Castellón,C. Valenciana,ultra,15,57
+2026-10-30,13,Ciudad Real,Castilla-La Mancha,lenta,44,149
+2026-10-30,13,Ciudad Real,Castilla-La Mancha,rapida,72,172
+2026-10-30,13,Ciudad Real,Castilla-La Mancha,ultra,15,82
+2026-10-30,14,Córdoba,Andalucía,lenta,77,203
+2026-10-30,14,Córdoba,Andalucía,rapida,52,101
+2026-10-30,14,Córdoba,Andalucía,ultra,13,41
+2026-10-30,15,A Coruña,Galicia,lenta,86,254
+2026-10-30,15,A Coruña,Galicia,rapida,70,282
+2026-10-30,15,A Coruña,Galicia,ultra,15,73
+2026-10-30,16,Cuenca,Castilla-La Mancha,lenta,16,50
+2026-10-30,16,Cuenca,Castilla-La Mancha,rapida,22,73
+2026-10-30,16,Cuenca,Castilla-La Mancha,ultra,15,74
+2026-10-30,17,Girona,Catalunya,lenta,203,518
+2026-10-30,17,Girona,Catalunya,rapida,119,298
+2026-10-30,17,Girona,Catalunya,ultra,35,116
+2026-10-30,18,Granada,Andalucía,lenta,108,392
+2026-10-30,18,Granada,Andalucía,rapida,83,187
+2026-10-30,18,Granada,Andalucía,ultra,16,136
+2026-10-30,19,Guadalajara,Castilla-La Mancha,lenta,43,97
+2026-10-30,19,Guadalajara,Castilla-La Mancha,rapida,28,53
+2026-10-30,19,Guadalajara,Castilla-La Mancha,ultra,9,28
+2026-10-30,20,Gipuzkoa,País Vasco,lenta,103,324
+2026-10-30,20,Gipuzkoa,País Vasco,rapida,64,184
+2026-10-30,20,Gipuzkoa,País Vasco,ultra,18,49
+2026-10-30,21,Huelva,Andalucía,lenta,83,213
+2026-10-30,21,Huelva,Andalucía,rapida,37,85
+2026-10-30,21,Huelva,Andalucía,ultra,4,16
+2026-10-30,22,Huesca,Aragón,lenta,48,101
+2026-10-30,22,Huesca,Aragón,rapida,39,104
+2026-10-30,22,Huesca,Aragón,ultra,4,19
+2026-10-30,23,Jaén,Andalucía,lenta,29,93
+2026-10-30,23,Jaén,Andalucía,rapida,59,118
+2026-10-30,23,Jaén,Andalucía,ultra,13,44
+2026-10-30,24,León,Castilla y León,lenta,60,137
+2026-10-30,24,León,Castilla y León,rapida,47,98
+2026-10-30,24,León,Castilla y León,ultra,9,42
+2026-10-30,25,Lleida,Catalunya,lenta,70,198
+2026-10-30,25,Lleida,Catalunya,rapida,102,267
+2026-10-30,25,Lleida,Catalunya,ultra,26,110
+2026-10-30,26,La Rioja,La Rioja,lenta,38,105
+2026-10-30,26,La Rioja,La Rioja,rapida,33,97
+2026-10-30,26,La Rioja,La Rioja,ultra,9,20
+2026-10-30,27,Lugo,Galicia,lenta,25,67
+2026-10-30,27,Lugo,Galicia,rapida,43,80
+2026-10-30,27,Lugo,Galicia,ultra,13,73
+2026-10-30,28,Madrid,Madrid,lenta,761,2780
+2026-10-30,28,Madrid,Madrid,rapida,477,1339
+2026-10-30,28,Madrid,Madrid,ultra,142,613
+2026-10-30,29,Málaga,Andalucía,lenta,210,606
+2026-10-30,29,Málaga,Andalucía,rapida,119,273
+2026-10-30,29,Málaga,Andalucía,ultra,22,102
+2026-10-30,30,Murcia,Murcia,lenta,151,482
+2026-10-30,30,Murcia,Murcia,rapida,151,312
+2026-10-30,30,Murcia,Murcia,ultra,17,92
+2026-10-30,31,Navarra,Navarra,lenta,80,273
+2026-10-30,31,Navarra,Navarra,rapida,118,256
+2026-10-30,31,Navarra,Navarra,ultra,44,128
+2026-10-30,32,Ourense,Galicia,lenta,25,55
+2026-10-30,32,Ourense,Galicia,rapida,31,58
+2026-10-30,32,Ourense,Galicia,ultra,7,42
+2026-10-30,33,Asturias,Asturias,lenta,208,428
+2026-10-30,33,Asturias,Asturias,rapida,116,290
+2026-10-30,33,Asturias,Asturias,ultra,26,74
+2026-10-30,34,Palencia,Castilla y León,lenta,27,53
+2026-10-30,34,Palencia,Castilla y León,rapida,22,55
+2026-10-30,34,Palencia,Castilla y León,ultra,6,29
+2026-10-30,35,Las Palmas,Canarias,lenta,189,526
+2026-10-30,35,Las Palmas,Canarias,rapida,108,249
+2026-10-30,35,Las Palmas,Canarias,ultra,20,143
+2026-10-30,36,Pontevedra,Galicia,lenta,60,171
+2026-10-30,36,Pontevedra,Galicia,rapida,70,137
+2026-10-30,36,Pontevedra,Galicia,ultra,20,76
+2026-10-30,37,Salamanca,Castilla y León,lenta,62,200
+2026-10-30,37,Salamanca,Castilla y León,rapida,49,109
+2026-10-30,37,Salamanca,Castilla y León,ultra,17,84
+2026-10-30,38,Santa Cruz de Tenerife,Canarias,lenta,140,406
+2026-10-30,38,Santa Cruz de Tenerife,Canarias,rapida,52,145
+2026-10-30,38,Santa Cruz de Tenerife,Canarias,ultra,8,24
+2026-10-30,39,Cantabria,Cantabria,lenta,61,215
+2026-10-30,39,Cantabria,Cantabria,rapida,59,152
+2026-10-30,39,Cantabria,Cantabria,ultra,17,77
+2026-10-30,40,Segovia,Castilla y León,lenta,33,73
+2026-10-30,40,Segovia,Castilla y León,rapida,23,56
+2026-10-30,40,Segovia,Castilla y León,ultra,8,19
+2026-10-30,41,Sevilla,Andalucía,lenta,225,657
+2026-10-30,41,Sevilla,Andalucía,rapida,118,248
+2026-10-30,41,Sevilla,Andalucía,ultra,31,139
+2026-10-30,42,Soria,Castilla y León,lenta,10,23
+2026-10-30,42,Soria,Castilla y León,rapida,13,30
+2026-10-30,42,Soria,Castilla y León,ultra,1,28
+2026-10-30,43,Tarragona,Catalunya,lenta,154,497
+2026-10-30,43,Tarragona,Catalunya,rapida,140,345
+2026-10-30,43,Tarragona,Catalunya,ultra,22,114
+2026-10-30,44,Teruel,Aragón,lenta,18,54
+2026-10-30,44,Teruel,Aragón,rapida,30,60
+2026-10-30,44,Teruel,Aragón,ultra,4,28
+2026-10-30,45,Toledo,Castilla-La Mancha,lenta,60,210
+2026-10-30,45,Toledo,Castilla-La Mancha,rapida,52,125
+2026-10-30,45,Toledo,Castilla-La Mancha,ultra,15,90
+2026-10-30,46,Valencia,C. Valenciana,lenta,368,1172
+2026-10-30,46,Valencia,C. Valenciana,rapida,287,651
+2026-10-30,46,Valencia,C. Valenciana,ultra,48,211
+2026-10-30,47,Valladolid,Castilla y León,lenta,59,166
+2026-10-30,47,Valladolid,Castilla y León,rapida,78,178
+2026-10-30,47,Valladolid,Castilla y León,ultra,14,91
+2026-10-30,48,Bizkaia,País Vasco,lenta,136,597
+2026-10-30,48,Bizkaia,País Vasco,rapida,70,237
+2026-10-30,48,Bizkaia,País Vasco,ultra,24,103
+2026-10-30,49,Zamora,Castilla y León,lenta,47,80
+2026-10-30,49,Zamora,Castilla y León,rapida,25,66
+2026-10-30,49,Zamora,Castilla y León,ultra,8,49
+2026-10-30,50,Zaragoza,Aragón,lenta,102,272
+2026-10-30,50,Zaragoza,Aragón,rapida,79,174
+2026-10-30,50,Zaragoza,Aragón,ultra,33,102
+2026-10-30,51,Ceuta,Ceuta,lenta,1,6
