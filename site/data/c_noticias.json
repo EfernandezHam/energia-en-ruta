@@ -1,10 +1,31 @@
 [
  {
+  "fecha": "2026-10-31",
+  "medio": "Diario de Pontevedra",
+  "titular": "La gasolina da un respiro en octubre, pero el gasóleo sigue rozando los dos euros en Pontevedra",
+  "resumen": "",
+  "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNOG5FWXIyMzVBUzhvM0hhWVJNdVBoN01UVWZHNGcyeDJod2o5M2tQN0ZIWXJZMkxFRXhZWWxWUldpVnpkRU5NVGFjZExVa2hiMGxzVWNVWTV2cTV0eVlBU0lWeTNyV1AzSnZOVFMzTS1PVlFjRW9ubmlRV0dZOTlKNGtBdFhzRXA1V0dKMlJxUkJHd0k0M3hvcWtWQVYyVkZ3dEdLRWZ3Y3BoWThUMkRWbFFialAwSzB4M1hUcmhveFhyMWE3ekRxakZEdEdQN2NiNXVveEYxNDRVMWdl0gHcAUFVX3lxTE04bkVZcjIzNUFTOG8zSGFZUk11UGg3TVRVZkc0ZzJ4Mmh3ajkza1A3RkhZclkyTEVFeFlZbFZSV2lWemRFTk1UYWNkTFVraGIwbHNVY1VZNXZxNXR5WUFTSVZ5M3JXUDNKdk5UUzNNLU9WUWNFb25uaVFXR1k5OUo0a0F0WHNFcDVXR0oyUnFSQkd3STQzeG9xa1ZBVjJWRnd0R0tFZndjcGhZOFQyRFZsUWJqUDBLMHgzWFRyaG94WHIxYTd6RHFqRkR0R1A3Y2I1dW94RjE0NFUxZ2U?oc=5"
+ },
+ {
   "fecha": "2026-10-30",
   "medio": "El Confidencial",
   "titular": "Precio de la gasolina hoy, viernes 30 de octubre: las gasolineras más baratas y más caras",
   "resumen": "",
   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPSG9LM0NLblZjNHNKSEFrQlBxNWpoS05xZjJhdzgyWGFpWmhuZ3pVOUU4cWNoRUVDVWdVdkZ4dVRsTkp3dFJZZjE0SEZqVjZ0OV9vWlZ5T19UZVZQdkUwT1Fxcm1WeG9HeGRjVWI4Z3F6SzhibDczNFJNc1lBd3ZQWkNqTjNnTWZRYUpuclVibEFZYkZOdWYzckJVYjlfc2NWSGZVZzh0dlRUbGs?oc=5"
+ },
+ {
+  "fecha": "2026-10-30",
+  "medio": "Las Provincias",
+  "titular": "Las gasolineras más baratas de la Comunitat Valenciana: dónde repostar gasolina y diésel al menor precio hoy",
+  "resumen": "",
+  "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQNXduQUlDR1J5d29wck5wdEFNd29xRVpqNDg4N3hQQzljRno4YU9LdjM4ek1JRWpoYm9vZE03cUhIMFpBRWNBRExpRXh4WEREYlhEaV9BMDB3WHowcTM1WXNsV3ZJVERDVXpHYjg5TEdMQW9TUlQ2UjFqT1hYejYzTlJ3a1oyY3RCRHN2bHBLdzhaSFo0YVo3QkpyMzd1eDVEa2JkTUR1ZnR1ejBSV2fSAbMBQVVfeXFMTzZNTFNxcDdsMU1vRm54ck14ZXFtbnRjd3p2clpIWFhnakJVcnhMOThsVWxrZkdybl9LS3AxQzN4dExrbmxwTzJGZ0Zzb2ozWGFxVXVzRkhfYmVMUlIxeVdWS2Ryd19lOVJJZGxUQktuMHRPYWVhcTdickRSX2E4U2hEaWIxb3ZnaGpVeG9xRmJpbUN5enVfWEUtYlhHQVBlMDd5cjM5Y0ZfdFFjeDBOVHR4RFk?oc=5"
+ },
+ {
+  "fecha": "2026-10-30",
+  "medio": "Autocasion.com",
+  "titular": "La gasolina y el diésel podrían volver a dispararse: China tiene la clave de una nueva subida de precios",
+  "resumen": "",
+  "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNeVZPT2ZfUldRVXVDeU0xLXlmdGFMUEsxeWNLM1c1Z2ZIbG5heG1JTHpUZ0RjbWF6b19YRC0ydmY2bGhwTjNKQ255ckVNTERJZU1xdkFLRnVCOHpSWm43Y2haa0FGSmp0TjdZNk5uQ2xGQUd3ZVNmc2pVSmt6MVpFNkxWSFc1VUVWcUJJ?oc=5"
  },
  {
   "fecha": "2026-10-30",
@@ -19,26 +40,5 @@
   "titular": "Precios carburantes Extremadura HOY: gasolina a 1,549 € y gasóleo a 1,689 €",
   "resumen": "",
   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPZlhsc1N0UFV2VWpqRkdkcTA0V0JUWmFUdnBUM3lDMDVxZXI4ZmpfVEFLeUZtRFRTX3REeGgyVzRpNUNFYXl3LXFvck1GMlJxSmNoZ29OQ3dlSGNIUmlLT1NTYl9ybFdPSzFlVEU4ZmFCclo5cU56cEw0a1JoT3dqOXRhRjV4ejNBemNIaDJfTmdkYkVJZTl0R21WMUrSAaIBQVVfeXFMUDdhWVRUYTc0QzZBc2ZoNVRMbWZZY2tiQXZNLVdLblVGemU2XzU2Q0NjcnZ0a2RpTFJwSm04VWdURnZkWnRuTFVhYzJrT1pjeVd6SHpXUVVyWkJremVBQ1k2UGdHUjhwcDhTSUQ5dVNNcFFQR2ZMTXhIY3NQcTR5TnpBQjk5NThVZlRWZktSRUJ2R2hhOEhnZFJLa2czTFJhUGlB?oc=5"
- },
- {
-  "fecha": "2026-10-30",
-  "medio": "Autocasion.com",
-  "titular": "Gasolina y diésel: China podría provocar otra subida de precios",
-  "resumen": "",
-  "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNeVZPT2ZfUldRVXVDeU0xLXlmdGFMUEsxeWNLM1c1Z2ZIbG5heG1JTHpUZ0RjbWF6b19YRC0ydmY2bGhwTjNKQ255ckVNTERJZU1xdkFLRnVCOHpSWm43Y2haa0FGSmp0TjdZNk5uQ2xGQUd3ZVNmc2pVSmt6MVpFNkxWSFc1VUVWcUJJ?oc=5"
- },
- {
-  "fecha": "2026-10-30",
-  "medio": "Híbridos y Eléctricos",
-  "titular": "China tiene el control y en cualquier momento pagaremos más por la gasolina y el diésel",
-  "resumen": "",
-  "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPN2F1dGRnS2hibWtIOTE3NmRkN3pmbHdNckpJTnJjdGZxRkJrUmUtSXU2LVlRTG04THZjMW16Vm9oWkNxRG5fVTBCVmpYcFBDLWoteUpVM2ZTZHFaOWlLZlJsa2NIdlhoR0JlMmsxb3pwNXE0aHJPazhVQmRVQ3FCM3JCRS02QXktNGR5NkdNRENlbVNWa3ZTZDh2NjVXZXc0cFlnOVVaZEJBcG9abHR1Y3NaZFp3NDYxeEZRVnJHVFB2dmdlTjM1VDBRNnY?oc=5"
- },
- {
-  "fecha": "2026-10-30",
-  "medio": "El Mundo",
-  "titular": "La inflación no se mueve del 4,9% en octubre pese a la caída del precio de los carburantes",
-  "resumen": "",
-  "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1MUkxiOTFUaFZmem1yZWFoWnVqVXgtT2QxenR1OTh5YTBka09jUkpJMk50anpaTUUycWhhWG1qSm5OcW1pblFTYm1kZTgxUG1ac0M0eDdoUGtNRld3WlVJRkxicloyYU8xU2RyVTVfU01iWmxyTmpjb1hEaHbSAXxBVV95cUxOVzF4N0pkSFdaekR5cnBoQ1VjZzUtNWlYY0hTTjZtb3F4b1JXd3lRQWdqN1F1VFZ2MGxVeTBuSWdfSkhvYmlNbkxUQTJqeUFUTU9qaU5xbmJmVmhmS0E3SlNuN1U2TFhsLWVzLXdRTEt0aThjeFJzX0FQeERy?oc=5"
  }
 ]
